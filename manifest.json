@@ -1,0 +1,41 @@
+{
+  "name": "Extend Chrome Bug Repro",
+  "description": "",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "permissions": ["storage", "cookies", "tabs", "scripting"],
+  "host_permissions": ["https://*/*"],
+  "background": {
+    "service_worker": "src/background.js",
+    "mode": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["src/content-scripts/main.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "src/popup/index.html",
+    "default_icon": {
+      "16": "assets/logo.png",
+      "32": "assets/logo.png",
+      "48": "assets/logo.png",
+      "128": "assets/logo.png"
+    }
+  },
+  "icons": {
+    "16": "assets/logo.png",
+    "32": "assets/logo.png",
+    "48": "assets/logo.png",
+    "128": "assets/logo.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/logo.png"
+      ],
+      "matches": ["https://*/*"]
+    }
+  ]
+}
