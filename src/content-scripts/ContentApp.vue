@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="background">
     <p>This is a Content App view</p>
     <p>{{ bar }}</p>
     <img :src="chrome.runtime.getURL('assets/logo.png')" alt="Vue Logo" width="60" height="60" />
