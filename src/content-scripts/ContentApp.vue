@@ -7,13 +7,21 @@
   </div>
 </template>
 
-<script setup>
-import { inject, onMounted, ref } from 'vue'
+<script>
 import HelloWorld from '../components/HelloWorld.vue'
 
-const chrome = inject('chrome')
-
-const bar = ref('bar')
-
-onMounted(() => chrome.runtime.sendMessage('Message from ContentApp'))
+export default {
+  components: {
+    HelloWorld,
+  },
+  inject: ['chrome'],
+  data() {
+    return {
+      bar: 'bar',
+    }
+  },
+  onMounted() {
+    chrome.runtime.sendMessage('Message from ContentApp')
+  },
+}
 </script>
