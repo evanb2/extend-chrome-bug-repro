@@ -12,7 +12,11 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.2.0",
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.8",
     "rollup-plugin-chrome-extension": "^4.0.1-16",
+    "sass": "^1.49.9",
+    "tailwindcss": "^3.0.23",
     "vite": "^2.8.0"
   }
 }

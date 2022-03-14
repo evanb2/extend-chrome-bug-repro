@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import ContentApp from './ContentApp.vue'
-import styles from '../styles/main.css'
+import styles from '../styles/main.scss'
 
 const treeHead = document.createElement('div')
 document.body.appendChild(treeHead)

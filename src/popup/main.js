@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import PopupApp from './PopupApp.vue'
-import styles from '../styles/main.css'
+import styles from '../styles/main.scss'
 
 const style = document.createElement('style')
 document.body.appendChild(style)
